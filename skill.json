@@ -1,0 +1,38 @@
+{
+  "name": "genpark-realtime-interactive-world-model-neural-simulator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time interactive world model neural simulator predicting frame-by-frame gameplay dynamics and physical state.",
+  "author": "genpark",
+  "category": "world-model",
+  "tags": [
+    "speedrun-ai",
+    "interactive-world-model",
+    "neural-simulation",
+    "realtime-gameplay",
+    "oasis-engine"
+  ],
+  "inputs": {
+    "user_action_vector": {
+      "type": "string"
+    },
+    "context_frame_buffer_size": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "world_frame_step_id": {
+      "type": "string"
+    },
+    "rendering_framerate_fps": {
+      "type": "integer"
+    },
+    "latent_diffusion_step_latency_ms": {
+      "type": "number"
+    },
+    "h265_video_frame_stream_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
